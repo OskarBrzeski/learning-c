@@ -4,6 +4,8 @@ Topics covered
 - Printing to Console
 - - Format Specifiers
 - - Rounding Floats
+- Types
+- - Type Conversion
 
 ## Print to Console
 Regular Printing
@@ -29,4 +31,21 @@ printf("%.2f", 1.5675);  // 1.57
 // Banker's Rounding
 printf("%.0f", 1.5);  // 2
 printf("%.0f", 2.5);  // 2
+```
+## Types
+Implicit Type Conversion
+```c
+int a = 1.5;  // 1
+float b = 2;  // 2.0
+float c = 5 / 2;  // 2.0
+float d = 5 / 2 * 3; // 6.0
+```
+Explicit Type Conversion
+```c
+int a = (int) 1.5;  // 1
+float b = (float) 2; // 2.0
+// it is often best to place type conversion at the start
+float c = (float) 5 / 2;  // 2.5
+float d = 5 / 2 * (float) 3;  // 6.0
+float e = 5 / (float) 2 * 3;  // 7.5
 ```
