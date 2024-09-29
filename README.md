@@ -5,11 +5,14 @@ Topics covered
 
 ## Print to Console
 ```c
-printf("Hello World!");
+printf("Hello World!\n");
 
 int myInt = 1;
 float myFloat = 1.0;
+double myDouble = 1.5;
 char myChar = 'a';
+char myString[] = "abc";
 
-printf("%d, %f, %c", myInt, myFloat, myChar);
+printf("%d, %f, %lf, %c, %s\n", myInt, myFloat, myDouble, myChar, myString);
+printf("%i, %F\n", myInt, myFloat);
 ```
