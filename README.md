@@ -1,15 +1,15 @@
 # Learning C
 
 Topics covered
-- Basic Printing to Console
+- Printing to Console
 
 ## Print to Console
 ```c
-#include <stdio.h>
+printf("Hello World!");
 
-int main() {
-    printf("Hello World!");
-    return 0;
-}
+int myInt = 1;
+float myFloat = 1.0;
+char myChar = 'a';
+
+printf("%d, %f, %c", myInt, myFloat, myChar);
 ```
-
