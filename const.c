@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    const int value = 100;
-    printf("%d\n", value);
+    const int VALUE = 100;
+    printf("%d\n", VALUE);
 
-    const int another;
+    const int ANOTHER;
     // another = 100;
-    printf("%d\n", another);
+    printf("%d\n", ANOTHER);
 
     return 0;
 }
