@@ -6,6 +6,7 @@ Topics covered
 - - Rounding Floats
 - Types
 - - Type Conversion
+- Booleans
 
 ## Print to Console
 Regular Printing
@@ -48,4 +49,14 @@ float b = (float) 2; // 2.0
 float c = (float) 5 / 2;  // 2.5
 float d = 5 / 2 * (float) 3;  // 6.0
 float e = 5 / (float) 2 * 3;  // 7.5
+```
+## Booleans
+```c
+#include <stdio.h>
+#include <stdbool.h>
+
+bool t = true;  // 1
+bool f = false; // 0
+
+printf("%d", t); // 1
 ```
