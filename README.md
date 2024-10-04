@@ -7,6 +7,8 @@ Topics covered
 - Types
 - - Type Conversion
 - Booleans
+- Control Flow
+- - If-Else
 
 ## Print to Console
 Regular Printing
@@ -59,4 +61,26 @@ bool t = true;  // 1
 bool f = false; // 0
 
 printf("%d", t); // 1
+```
+## Control Flow
+If-Else
+```c
+if (cond1) doSomething();
+else if (cond2) doThisInstead();
+else doAnotherThing();
+
+if (cond1)
+    doSomething();
+else if (cond2)
+    doThisInstead();
+else
+    doAnotherThing();
+
+if (cond1) {
+    doSomething();
+} else if (cond2) {
+    doThisInstead();
+} else {
+    doAnotherThing();
+}
 ```
