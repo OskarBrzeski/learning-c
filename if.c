@@ -33,5 +33,8 @@ int main() {
     else
         printf("4\n");
 
+    true ? printf("Ternary Operator\n") : printf("Note the missing semi-colon\n");
+    false ? printf("Ternary Operator\n") : printf("Note the missing semi-colon\n");
+
     return 0;
 }

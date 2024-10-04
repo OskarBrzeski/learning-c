@@ -83,4 +83,6 @@ if (cond1) {
 } else {
     doAnotherThing();
 }
+
+cond ? result1 : result2;
 ```
