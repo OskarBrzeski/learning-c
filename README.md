@@ -10,6 +10,8 @@ Topics covered
 - Control Flow
 - - If-Else
 - Arrays
+- - Array size
+- - Multi-dimensional Arrays
 
 ## Print to Console
 Regular Printing
@@ -96,4 +98,18 @@ printf("%d", arr[1]); // 2
 int arr2[5]; // {0, 0, 0, 0, 0}
 
 printf("%d", arr2[5]); // accesses unknown memory, can be other arrays
+```
+Array size
+```c
+int arr[] = {1, 2, 3, 4, 5};
+
+int length = sizeof(arr) / sizeof(arr[0]): // 20 / 5
+```
+Multi-Dimensional Arrays
+```c
+int multi[2][3] = { {1, 2, 3}, {4, 5, 6} };
+
+printf("%d", multi[1][2]); // 6
+
+printf("%lu", sizeof(multi)); // 24
 ```
