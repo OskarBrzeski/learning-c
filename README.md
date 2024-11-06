@@ -12,6 +12,7 @@ Topics covered
 - Arrays
 - - Array size
 - - Multi-dimensional Arrays
+- Strings
 
 ## Print to Console
 Regular Printing
@@ -112,4 +113,22 @@ int multi[2][3] = { {1, 2, 3}, {4, 5, 6} };
 printf("%d", multi[1][2]); // 6
 
 printf("%lu", sizeof(multi)); // 24
+```
+## Strings
+```c
+char example[] = "This is a string"; // array ends with \0
+
+printf("%s", example); // This is a string
+printf("%lu", strlen(example)); // 16
+printf("%lu", sizeof(example)); // 17
+
+char another[50] = "Begin strcat: ";
+printf("%lu", strlen(another)); // 14
+printf("%lu", sizeof(another)); // 50
+
+strcat(another, example);
+printf("%s", another); // Begin strcat: This is a string
+printf("%s", example); // This is a string
+printf("%lu", strlen(another)); // 30
+printf("%lu", sizeof(another)); // 50
 ```
