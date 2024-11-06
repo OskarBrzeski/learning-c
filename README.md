@@ -9,6 +9,7 @@ Topics covered
 - Booleans
 - Control Flow
 - - If-Else
+- Arrays
 
 ## Print to Console
 Regular Printing
@@ -85,4 +86,14 @@ if (cond1) {
 }
 
 cond ? result1 : result2;
+```
+## Arrays
+```c
+int arr[] = {1, 2, 3};
+
+printf("%d", arr[1]); // 2
+
+int arr2[5]; // {0, 0, 0, 0, 0}
+
+printf("%d", arr2[5]); // accesses unknown memory, can be other arrays
 ```
